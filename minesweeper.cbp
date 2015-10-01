@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="minesweeper" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/minesweeper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DMYDEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/minesweeper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Wl,--stack=16777216" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-Wl,--stack=16777216" />
+			<Add library="mingw32" />
+			<Add library="SDLmain" />
+			<Add library="SDL.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="SDL_gfx" />
+			<Add library="SDL_ttf" />
+			<Add library="SDL_image" />
+			<Add library="SDL_mixer" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/lib" />
+		</Linker>
+		<Unit filename="config.ini" />
+		<Unit filename="src/best.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/best.h" />
+		<Unit filename="src/debugmalloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/debugmalloc.h" />
+		<Unit filename="src/dictionary.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/dictionary.h" />
+		<Unit filename="src/iniparser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/iniparser.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.h" />
+		<Unit filename="src/menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/menu.h" />
+		<Unit filename="src/menuconstants.h" />
+		<Unit filename="src/menuevents.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/menuevents.h" />
+		<Unit filename="src/minecaps.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/minecaps.h" />
+		<Unit filename="src/mineconfig.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mineconfig.h" />
+		<Unit filename="src/mineconstants.h" />
+		<Unit filename="src/minecursor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/minecursor.h" />
+		<Unit filename="src/minedraw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/minedraw.h" />
+		<Unit filename="src/mineevents.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mineevents.h" />
+		<Unit filename="src/minetypes.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
